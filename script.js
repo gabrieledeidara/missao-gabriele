@@ -27,7 +27,7 @@ let atual = 0;
 let perguntaAtual;
 
 function mostraPergunta(){//criando função para mostrar a pergunta
-    perguntaAtual = perguntas[atual]//guardando a lista de perguntas dentro da variavel perguntaAtual
+    perguntaAtual = perguntas[atual];//guardando a lista de perguntas dentro da variavel perguntaAtual
     caixaPerguntas.textContent = perguntaAtual.enunciado;//manipulando o conteudo do texto e do enunciado 
 }
 mostraPergunta;//executando a função mmostrar pergunta
