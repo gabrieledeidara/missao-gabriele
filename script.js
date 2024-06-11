@@ -8,7 +8,8 @@ const perguntas = [
     //primeiro objeto dessa lista
     
     {enunciado: "Qual a melhor maneira de combater o desmatamento?",
-     alternativas: ["reflorestamento de áreas degradadas",
+     alternativas: 
+     ["reflorestamento de áreas degradadas",
         "implementação de leis mais rigorosas"]
 }
 
