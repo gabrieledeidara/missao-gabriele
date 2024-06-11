@@ -16,7 +16,8 @@ const perguntas = [
 //segundo objeto da lista de perguntas
 
    { enunciado: "Como podemos combater a desigualdade social?", 
-    alternativas: ["implementar programas de educação e formação social acessivel a todos",
+    alternativas:
+     ["implementar programas de educação e formação social acessivel a todos",
     "politicas de redistribuição de renda e oportunidades"]
 },
      
