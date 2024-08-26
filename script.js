@@ -34,11 +34,11 @@ function mostraPergunta(){//criando função para mostrar a pergunta
 }
 mostraPergunta();//executando a função mmostrar pergunta
 
-function mostraAlternativas(){
+function mostraAlternativas(){//insere os botões alternativa
     for(const alternativa of perguntaAtual.alternativas){
-        const botaoAlternativas = document.createElement("button");
-        botaoAlternativas.textContent = alternativa;
-        caixaAlternativas.appendChild(botaoAlternativas);
+        const botaoAlternativas = document.createElement("button");//criando botão
+        botaoAlternativas.textContent = alternativa;//salvando a alternativa no botão
+        caixaAlternativas.appendChild(botaoAlternativas);//insere o botão na DIV do html
     }
 }
 
