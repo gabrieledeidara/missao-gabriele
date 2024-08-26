@@ -32,6 +32,8 @@ function mostraPergunta(){//criando função para mostrar a pergunta
     caixaAlternativas.textContent= "";
     mostraAlternativas();
 }
+mostraPergunta();//executando a função mmostrar pergunta
+
 function mostraAlternativas(){
     for(const alternativa of perguntaAtual.alternativas){
         const botaoAlternativas = document.createElement("button");
@@ -40,4 +42,4 @@ function mostraAlternativas(){
     }
 }
 
-mostraPergunta();//executando a função mmostrar pergunta
+mostraAlternativas(); //executando a função mostrar alternativas
