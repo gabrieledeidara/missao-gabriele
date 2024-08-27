@@ -35,22 +35,21 @@ function mostraPergunta() {//criando função para mostrar a pergunta
     caixaAlternativas.textContent = "";//limpa a texto da caixa alternativas
     mostraAlternativas();//executa a função mostraAlternativa
 }
-mostraPergunta();//executando a função mmostrar pergunta
 
 function mostraAlternativas() {//insere os botões alternativa
     for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");//criando botão
         botaoAlternativas.textContent = alternativa.texto;//salvando a alternativa no botão
-        botaoAlternativas.addEventListener('click', ()=> respostaSelecionada(alternativa));
+        botaoAlternativas.addEventListener('click', () => respostaSelecionada(alternativa));
         caixaAlternativas.appendChild(botaoAlternativas);//insere o botão na DIV do html
     }
 }
 
 mostraAlternativas(); //executando a função mostrar alternativas
 
-function respostaSelecionada(opcaoSelecionada){
-    const afirmacao = opcaoSelecionada.afirmacao;
-    historiaFinal = afirmacao;
-    atual++;
-    mostraPergunta();
+function respostaSelecionada(opcaoSelecionada) {//cria a função paraa guardar a resposta selecionada das afirmações
+    const afirmacao = opcaoSelecionada.afirmacao;//cria a constante afirmação para guardar o atributo afirmação
+    historiaFinal = afirmacao;// variavel historiaFinal coleta os daos de todas as afirmações
+    atual++;//atualiza a variavel "atual" percorrendo todos os itens da lista de perguntas
+    mostraPergunta();//executa a função mostraPergunta
 }
