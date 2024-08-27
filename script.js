@@ -27,7 +27,7 @@ const perguntas = [
 
 let atual = 0; //variavel que inicia a pergunta 1 
 let perguntaAtual; //variavel que recebe a pergunta atual e mostra o enunciado da pergunta
-let historiaFinal = ""; //variavel que irá mostrar no final o resumo das afirmativas
+let historiaFinal =""; //variavel que irá mostrar no final o resumo das afirmativas
 
 function mostraPergunta() {//criando função para mostrar a pergunta
     perguntaAtual = perguntas[atual];//guardando a lista de perguntas dentro da variavel perguntaAtual
@@ -50,7 +50,13 @@ mostraAlternativas(); //executando a função mostrar alternativas
 
 function respostaSelecionada(opcaoSelecionada) {//cria a função paraa guardar a resposta selecionada das afirmações
     const afirmacao = opcaoSelecionada.afirmacao;//cria a constante afirmação para guardar o atributo afirmação
-    historiaFinal = afirmacao;// variavel historiaFinal coleta os daos de todas as afirmações
+    historiaFinal += afirmacao + " ";// variavel historiaFinal coleta os daos de todas as afirmações
     atual++;//atualiza a variavel "atual" percorrendo todos os itens da lista de perguntas
     mostraPergunta();//executa a função mostraPergunta
+}
+
+function mostraResultado(){
+    caixaPerguntas.textContent = "Síntese final...";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
 }
