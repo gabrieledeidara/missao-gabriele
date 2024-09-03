@@ -6,43 +6,43 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "TEXTO DA PERGUNTA 1",
+        enunciado: "Qual é um possível impacto positivo da inteligência artificial no mercado de trabalho?",
         alternativas: [
             {
-                texto: "TEXTO DA ALTERNATIVA 1 DA PERGUNTA 1",
-                afirmacao: "AFIRMAÇÃO DA ALTERNATIVA 1 DA PERGUNTA 1"
+                texto: "Aumento da produtividade",
+                afirmacao: "A IA pode automatizar tarefas repetitivas, permitindo que os trabalhadores se concentrem em atividades mais criativas e estratégicas."
             },
             {
-                texto: "TEXTO DA ALTERNATIVA 2 DA PERGUNTA 1",
-                afirmacao: "AFIRMAÇÃO DA ALTERNATIVA 2 DA PERGUNTA 1"
+                texto: "Desemprego generalizado",
+                afirmacao: "A automação pode substituir alguns empregos, especialmente aqueles que envolvem tarefas simples e repetitivas."
             }
 
         ]
     },
     {
-        enunciado: "TEXTO DA PERGUNTA 2",
+        enunciado: "Como a inteligência artificial pode influenciar a educação no futuro?",
         alternativas: [
             {
-                texto: "TEXTO DA ALTERNATIVA 1 DA PERGUNTA 2",
-                afirmacao: "AFIRMAÇÃO DA ALTERNATIVA 1 DA PERGUNTA 2"
+                texto: " Personalização do aprendizado",
+                afirmacao: "A IA pode adaptar os materiais e métodos de ensino às necessidades individuais dos alunos, promovendo uma aprendizagem mais eficaz"
             },
             {
-                texto: "TEXTO DA ALTERNATIVA 2 DA PERGUNTA 2",
-                afirmacao: "AFIRMAÇÃO DA ALTERNATIVA 2 DA PERGUNTA 2"
+                texto: "Redução da interação humana",
+                afirmacao: "O uso excessivo de IA pode diminuir a interação direta entre professores e alunos, afetando o desenvolvimento social e emocional"
             }
 
         ]
     },
     {
-        enunciado: "TEXTO DA PERGUNTA 3",
+        enunciado: "Qual é um possível desafio ético associado ao avanço da inteligência artificial?",
         alternativas: [
             {
-                texto: "TEXTO DA ALTERNATIVA 1 DA PERGUNTA 3",
-                afirmacao: "AFIRMAÇÃO DA ALTERNATIVA 1 DA PERGUNTA 3"
+                texto: "Privacidade e segurança de dados",
+                afirmacao: "A coleta e análise massiva de dados pessoais pela IA pode levar a preocupações sobre privacidade e segurança."
             },
             {
-                texto: "TEXTO DA ALTERNATIVA 2 DA PERGUNTA 3",
-                afirmacao: "AFIRMAÇÃO DA ALTERNATIVA 2 DA PERGUNTA 3"
+                texto: "Melhorias na tomada de decisões",
+                afirmacao: "Embora a IA possa auxiliar na tomada de decisões, há preocupações éticas sobre quem controla os algoritmos e como eles são usados"
             }
 
         ]
