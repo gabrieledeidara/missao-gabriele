@@ -5,24 +5,48 @@ const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
-    //primeiro objeto dessa lista
-
     {
-        enunciado: "Qual a melhor maneira de combater o desmatamento?",
-        alternativas:
-            ["reflorestamento de áreas degradadas",
-                "implementação de leis mais rigorosas"]
+        enunciado: "TEXTO DA PERGUNTA 1",
+        alternativas: [
+            {
+                texto: "TEXTO DA ALTERNATIVA 1 DA PERGUNTA 1",
+                afirmacao: "AFIRMAÇÃO DA ALTERNATIVA 1 DA PERGUNTA 1"
+            },
+            {
+                texto: "TEXTO DA ALTERNATIVA 2 DA PERGUNTA 1",
+                afirmacao: "AFIRMAÇÃO DA ALTERNATIVA 2 DA PERGUNTA 1"
+            }
+
+        ]
     },
-
-    //segundo objeto da lista de perguntas
-
     {
-        enunciado: "Como podemos combater a desigualdade social?",
-        alternativas:
-            ["implementar programas de educação e formação social acessivel a todos",
-                "politicas de redistribuição de renda e oportunidades"]
-    },
+        enunciado: "TEXTO DA PERGUNTA 2",
+        alternativas: [
+            {
+                texto: "TEXTO DA ALTERNATIVA 1 DA PERGUNTA 2",
+                afirmacao: "AFIRMAÇÃO DA ALTERNATIVA 1 DA PERGUNTA 2"
+            },
+            {
+                texto: "TEXTO DA ALTERNATIVA 2 DA PERGUNTA 2",
+                afirmacao: "AFIRMAÇÃO DA ALTERNATIVA 2 DA PERGUNTA 2"
+            }
 
+        ]
+    },
+    {
+        enunciado: "TEXTO DA PERGUNTA 3",
+        alternativas: [
+            {
+                texto: "TEXTO DA ALTERNATIVA 1 DA PERGUNTA 3",
+                afirmacao: "AFIRMAÇÃO DA ALTERNATIVA 1 DA PERGUNTA 3"
+            },
+            {
+                texto: "TEXTO DA ALTERNATIVA 2 DA PERGUNTA 3",
+                afirmacao: "AFIRMAÇÃO DA ALTERNATIVA 2 DA PERGUNTA 3"
+            }
+
+        ]
+    }
 ];
 
 let atual = 0; //variavel que inicia a pergunta 1 
