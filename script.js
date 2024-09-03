@@ -55,8 +55,9 @@ function respostaSelecionada(opcaoSelecionada) {//cria a função paraa guardar 
     mostraPergunta();//executa a função mostraPergunta
 }
 
-function mostraResultado(){
-    caixaPerguntas.textContent = "Síntese final...";
+function mostraResultado() {
+    caixaPerguntas.textContent = "Resumindo...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
+mostraPergunta()
