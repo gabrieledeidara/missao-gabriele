@@ -49,32 +49,35 @@ const perguntas = [
     }
 ];
 
-let atual = 0; //variavel que inicia a pergunta 1 
-let perguntaAtual; //variavel que recebe a pergunta atual e mostra o enunciado da pergunta
-let historiaFinal =""; //variavel que irá mostrar no final o resumo das afirmativas
+let atual = 0;
+let perguntaAtual;
+let historiaFinal = "";
 
-function mostraPergunta() {//criando função para mostrar a pergunta
-    perguntaAtual = perguntas[atual];//guardando a lista de perguntas dentro da variavel perguntaAtual
-    caixaPerguntas.textContent = perguntaAtual.enunciado;//manipulando o conteudo do texto e do enunciado 
-    caixaAlternativas.textContent = "";//limpa a texto da caixa alternativas
-    mostraAlternativas();//executa a função mostraAlternativa
+function mostraPergunta() {
+    if (atual >= perguntas.length) {
+        mostraResultado();
+        return;
+    }
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textContent = "";
+    textoResultado.textContent = "";
+    mostraAlternativas();
 }
 
-function mostraAlternativas() {  //insere os botões alternativa
+function mostraAlternativas() {
     for (const alternativa of perguntaAtual.alternativas) {
-        const botaoAlternativas = document.createElement("button");//criando botão
-        botaoAlternativas.textContent = alternativa.texto;//salvando a alternativa no botão
-        botaoAlternativas.addEventListener('click', () => respostaSelecionada(alternativa));
-        //adiciona o metodo de escuta do click e aciona a função respostaSelecionada chamando a alternativa
-        caixaAlternativas.appendChild(botaoAlternativas);//insere o botão na DIV do html
+        const botaoAlternativa = document.createElement("button");
+        botaoAlternativa.textContent = alternativa.texto;
+        botaoAlternativa.addEventListener("click", () => respostaSelecionada(alternativa));
+        caixaAlternativas.appendChild(botaoAlternativa);
     }
 }
-
-function respostaSelecionada(opcaoSelecionada) {//cria a função paraa guardar a resposta selecionada das afirmações
-    const afirmacao = opcaoSelecionada.afirmacao;//cria a constante afirmação para guardar o atributo afirmação
-    historiaFinal += afirmacao + " ";// variavel historiaFinal coleta os daos de todas as afirmações
-    atual++;//atualiza a variavel "atual" percorrendo todos os itens da lista de perguntas
-    mostraPergunta();//executa a função mostraPergunta
+function respostaSelecionada(opcaoSelecionada) {
+    const afirmacao = opcaoSelecionada.afirmacao;
+    historiaFinal += afirmacao + " ";
+    atual++
+    mostraPergunta();
 }
 
 function mostraResultado() {
@@ -82,4 +85,4 @@ function mostraResultado() {
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
-mostraPergunta()
+mostraPergunta();
