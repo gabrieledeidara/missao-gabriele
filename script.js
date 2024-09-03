@@ -60,7 +60,7 @@ function mostraPergunta() {//criando função para mostrar a pergunta
     mostraAlternativas();//executa a função mostraAlternativa
 }
 
-function mostraAlternativas() {//insere os botões alternativa
+function mostraAlternativas() {  //insere os botões alternativa
     for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");//criando botão
         botaoAlternativas.textContent = alternativa.texto;//salvando a alternativa no botão
@@ -69,8 +69,6 @@ function mostraAlternativas() {//insere os botões alternativa
         caixaAlternativas.appendChild(botaoAlternativas);//insere o botão na DIV do html
     }
 }
-
-mostraAlternativas(); //executando a função mostrar alternativas
 
 function respostaSelecionada(opcaoSelecionada) {//cria a função paraa guardar a resposta selecionada das afirmações
     const afirmacao = opcaoSelecionada.afirmacao;//cria a constante afirmação para guardar o atributo afirmação
