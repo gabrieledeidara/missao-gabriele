@@ -1,5 +1,5 @@
 :root{
-    --cor-fundo: #447eb1;
+    --cor-fundo: #000000;
     --cor-principal: #262942c5 ;
     --cor-secundaria: #212333;
     --cor-destaque: #749ea5;
@@ -31,7 +31,7 @@ h1{
     padding-bottom: 10px;
 }
 :root{
-    --cor-fundo: #3a8fda;
+    --cor-fundo: #000000;
     --cor-principal: #5e5d66a8 ;
     --cor-secundaria: #212333;
     --cor-destaque: hsl(189, 19%, 52%);
