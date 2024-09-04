@@ -2,7 +2,7 @@
     --cor-fundo: #447eb1;
     --cor-principal: #262942c5 ;
     --cor-secundaria: #212333;
-    --cor-destaque: #37bdd4;
+    --cor-destaque: #749ea5;
     --cor-texto: #d7f9ffce;
 }
 
@@ -34,7 +34,7 @@ h1{
     --cor-fundo: #3a8fda;
     --cor-principal: #5e5d66a8 ;
     --cor-secundaria: #212333;
-    --cor-destaque: hsl(189, 64%, 66%);
+    --cor-destaque: hsl(189, 19%, 52%);
     --cor-texto: #D7F9FF;
 }
 
